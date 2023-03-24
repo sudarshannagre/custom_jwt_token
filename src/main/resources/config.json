@@ -1,0 +1,32 @@
+{
+	"tokens": [{
+			"id": 1,
+			"hclaims": {
+				"typ": "JWT",
+				"alg": "ES256",
+				"jku": "http://localhost:90/v1/keys",
+				"kid": "$keyId"
+			},
+			"bclaims": {
+				"aud": ["open"],
+				"iss": "v1",
+				"exp": 2592000,
+				"iat": "",
+				"jti": ""
+			}
+		},
+		{
+			"id": 2,
+			"hclaims": {
+				"typ": "JWT",
+				"alg": "ES256",
+				"jku": "http://localhost:80/v2/keys",
+				"kid": "$keyId"
+			},
+			"bclaims": {
+				"aud": ["protected"],
+				"exp": 86400
+			}
+		}
+	]
+}

@@ -1,0 +1,15 @@
+Spring boot + Nimbus JOSE + JWT
+
+More Help : https://connect2id.com/products/nimbus-jose-jwt
+
+Note : Nimbus JWT supports multiple algorithms for signing and encrypting tokens.
+	In this example we are using EC ES256 Algorithm.
+	
+
+	
+URI'S
+
+GET
+1. http://localhost:8080/v1/jwttoken?aud=open
+
+2. http://localhost:8080/v1/keys
